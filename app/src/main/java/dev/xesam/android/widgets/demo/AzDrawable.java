@@ -9,13 +9,14 @@ import android.graphics.drawable.Drawable;
 /**
  * Created by xesamguo@gmail.com on 15-9-7.
  */
-public class BgDrawable extends Drawable {
+public class AzDrawable extends Drawable {
 
     Paint paint = new Paint();
 
-    public BgDrawable() {
+    public AzDrawable() {
         paint.setTextSize(50);
         paint.setColor(Color.RED);
+        paint.setAntiAlias(true);
     }
 
     @Override

@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
         findViewById(R.id.change).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ifi.setDrawable(new BgDrawable());
+                ifi.setDrawable(new AzDrawable());
             }
         });
     }
