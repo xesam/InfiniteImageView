@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="InfiniteImageView">
+        <attr name="speed" format="dimension" />
+        <attr name="direction">
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+        </attr>
+        <attr name="src" format="reference" />
+    </declare-styleable>
+</resources>

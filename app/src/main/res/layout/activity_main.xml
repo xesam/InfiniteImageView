@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:InfiniteImageView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <dev.xesam.android.widgets.InfiniteImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                InfiniteImageView:speed="10dp"
+                InfiniteImageView:src="@drawable/a_3" />
+
+            <dev.xesam.android.widgets.InfiniteImageView
+                android:id="@+id/ifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                InfiniteImageView:speed="5dp"
+                InfiniteImageView:src="@drawable/a_2" />
+
+            <dev.xesam.android.widgets.InfiniteImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                InfiniteImageView:speed="1dp"
+                InfiniteImageView:src="@drawable/a_1" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="start" />
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="stop" />
+
+            <Button
+                android:id="@+id/restart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="restart" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <dev.xesam.android.widgets.InfiniteImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                InfiniteImageView:speed="2dp"
+                InfiniteImageView:src="@drawable/circle" />
+
+            <dev.xesam.android.widgets.InfiniteImageView
+                android:layout_width="40dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                InfiniteImageView:direction="vertical"
+                InfiniteImageView:speed="2dp"
+                InfiniteImageView:src="@drawable/circle" />
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
