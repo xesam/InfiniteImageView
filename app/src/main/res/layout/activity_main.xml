@@ -25,7 +25,7 @@
                 android:id="@+id/ifi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                InfiniteImageView:speed="-5dp"
+                InfiniteImageView:speed="-2dp"
                 InfiniteImageView:src="@drawable/a_2" />
 
             <dev.xesam.android.widgets.InfiniteImageView
@@ -61,6 +61,13 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="restart" />
+
+            <Button
+                android:id="@+id/change"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="change" />
         </LinearLayout>
 
         <FrameLayout

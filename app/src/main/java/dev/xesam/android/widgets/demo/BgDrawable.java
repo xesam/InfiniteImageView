@@ -24,7 +24,7 @@ public class BgDrawable extends Drawable {
         char end = 'Z';
 
         for (char i = start; i < end; i++) {
-            canvas.drawText(String.valueOf(i), 50 * (i - start), 50, paint);
+            canvas.drawText(String.valueOf(i), getBounds().left + 50 * (i - start), 50, paint);
         }
     }
 

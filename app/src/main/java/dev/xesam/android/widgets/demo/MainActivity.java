@@ -14,7 +14,6 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         final InfiniteImageView ifi = (InfiniteImageView) findViewById(R.id.ifi);
-        ifi.setDrawable(new BgDrawable());
 
         findViewById(R.id.start).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,6 +31,12 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 ifi.restart();
+            }
+        });
+        findViewById(R.id.change).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ifi.setDrawable(new BgDrawable());
             }
         });
     }
