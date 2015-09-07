@@ -25,7 +25,7 @@
                 android:id="@+id/ifi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                InfiniteImageView:speed="5dp"
+                InfiniteImageView:speed="-5dp"
                 InfiniteImageView:src="@drawable/a_2" />
 
             <dev.xesam.android.widgets.InfiniteImageView
